@@ -1,0 +1,141 @@
+html {
+  font-size: 16px;
+}
+
+
+/* FOOTER -PART */
+
+.footer-part-container {
+    background-color: #391f00;
+    width: 100%;
+  }
+  
+  .footer-icon img {
+    height: 50px;
+  }
+  
+  .footer-middle-part {
+    /* background-color: rgb(2, 56, 56); */
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .div1-p {
+    display: flex;
+    gap: 30px;
+    padding: 25px;
+    /* background-color: red; */
+  }
+  
+  .div1-p ul li {
+    padding: 5px;
+    color: aliceblue;
+    font-size: 1rem;
+  }
+  
+  #bold-li {
+    font-weight: bolder;
+  }
+  
+  .bottom-text {
+    padding-bottom: 15px;
+    font-size: 0.625rem;
+    color: aliceblue;
+    text-align: center;
+  }
+  
+  /* CalL and Button */
+  
+  .div-call {
+    font-size: 16px;
+    color: #fff;
+    /* margin-left: 10px ; */
+    margin-bottom: 6px;
+  }
+  
+  .btn-call {
+    border: 2px solid #e16a00;
+    padding: 5px 22px;
+    color: #e16a00;
+    background-color: #391f00;
+  }
+  
+  
+  .respon-part{
+      display: none;
+  }
+
+  @media (max-width: 768px) {
+
+  
+    .div1-p {
+      display: none;
+     
+    } 
+  
+    .footer-icon img {
+    
+      
+      height: 50px;
+      padding-left: 33px;
+      padding-bottom: 10px;
+      
+    }
+  
+  
+    .footer-call,
+    .bottom-text {
+      display: none;
+    }
+   
+ .footer-middle-part {
+      
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0px 25px 0px;
+    }
+  
+     .respon-part{
+      display: block;
+    }  
+  
+   
+  
+    .div1 li a{
+      display: block;
+      color: #fff;
+      font-size: 11px;
+     list-style: none;
+      
+     } 
+  
+    .respon-ul {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #fff;
+    }
+  
+    .bottom-last-text p{
+      display: flex;
+      justify-content: center;
+      padding: 20px 0px 0px 0px;
+      color: #fff;
+      font-size: 0.738rem;
+  
+    }
+   .library-logo {
+      /* background-color: #e16a00; */
+      display:flex;
+      justify-content: center;
+  
+  
+   }   
+
+  
+}

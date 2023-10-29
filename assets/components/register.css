@@ -1,0 +1,119 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Text&family=Montserrat:wght@500&display=swap);
+
+/* body {
+    font-family: 'Montserrat', sans-serif;
+} */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 3%;
+} 
+#popup img {
+  margin-left: auto;
+  margin-right: 40px;
+  padding: 20px;
+}
+.close-popup {
+    display: none;
+  }
+.register h2 {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-top: 30px;
+    padding: 30px;
+}
+.register input {
+    width: 564px;
+    height: 76px; 
+    background-color: white; border: 1px solid #CECECE; 
+    margin-bottom: 18px;
+    color: #797667;
+font-size: 1.2rem;
+font-family: Crimson Text;
+font-weight: 400;
+word-wrap: break-word;
+}
+input.submit {
+    background: #E16A00; 
+    border-radius: 5px; 
+    border: 1px solid #CECECE;
+    margin-top: 50px;
+    color: white;
+font-size: 1.2rem;
+font-family: Crimson Text;
+font-weight: 700;
+word-wrap: break-word;
+}
+input.submit:hover {
+    background-color: #E18A10;
+}
+.register {
+width: 675px;
+height: 555px;
+background-color:white ;
+display: flex;
+flex-direction: column;
+row-gap: 17px;
+align-items: center;
+}
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.error-text{
+    color: red;
+    font-size: 0.8rem;
+}
+input.error-input {
+    color: red;
+    border: 1px solid red;
+}
+
+.success-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2.success-join {
+color: rgb(66, 150, 10);
+}
+
+@media (max-width: 768px) {
+    .register {
+        width: 260px;
+       height: 344px;
+    } 
+    .form-login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .register input {
+        width: 218px;
+        height: 46px; 
+        margin: 0;
+    }
+    input.submit {
+      margin-top: 0;
+      margin: 10px;
+    }
+    .register h2 {
+        font-size: 1.6rem;
+        margin-top: 10px;
+    }
+    .error-text{
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,42 @@
+.social-media {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+  }
+  .social-set-image {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    height: 45px;
+  }
+  .social-set-text {
+    color: #241400;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: 768px) {
+    .social-set-image {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      column-gap: 25px;
+      height: 30px;
+    }
+      
+    .social-set-text {
+      color: #241400;
+      font-size: 0.9rem;
+      font-weight: 600;
+      line-height: 35px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+
+    }

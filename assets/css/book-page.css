@@ -1,0 +1,258 @@
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Section 1 */
+.book-section01 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-01-div {
+    display: flex; 
+    gap: 141px; 
+}
+
+.btn1 {
+    width: 100px;
+    height: 29px;
+    background: #E16A00;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 246px;
+}
+
+.btn1 a {
+    color: #FFF;
+    font-size: .75rem;
+    font-weight: 900;
+    line-height: 196.187%; /* 23.542px */
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.book-section01 .left-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn2 {
+    width: 69px;
+    height: 23px;
+    background: #2F80ED;
+    border: none;
+}
+
+.btn2 a {
+    color: #FFF;
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 196.187%; /* 23.542px */
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.right-box img {
+    width: 379px;
+    height: 529px;
+    gap: 141px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.1875rem;
+    font-weight: 700;
+    line-height: 196.187%;
+}
+
+.p-01 {
+    color: #241400;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 196.187%; /* 31.39px */
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+    color: #241400;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 196.187%; /* 43.161px */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p-02 {
+    color: #241400;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 196.187%;
+    font-style: normal;/* 35.314px */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p-03 {
+    color: #241400;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 196.187%;
+    font-style: normal;/* 35.314px */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Section 2 */
+.book-section02 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+form {
+    margin-top: 122px;
+    display: flex;
+    align-items:  center;
+}
+
+.text-input {
+    width: 625px;
+    height: 60px;
+    padding-left: 38px;
+    color: #232323;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.text-input ::placeholder {
+   padding-left: 38px;
+}
+
+form img {
+    width: 60.109px;
+    height: 60px;
+    border-radius: 5px;
+    background: #E16A00;
+}
+
+.div-01 {
+    width: 686px;
+    height: 167px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 30px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 29px;
+    margin-top: 53px;
+}
+
+.div-p-01 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.div-02 {
+    width: 686px;
+    height: 150px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 30px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-top: 43px;
+}
+
+.div-p-02 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.p-04 {
+    color: #232323;
+    font-family: Rubik;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.p-05 {
+    color: #232323;
+    font-family: Rubik;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.p-06 {
+    padding-top: 17px;
+    color: #232323;
+    font-family: Rubik;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.p-07 {
+    color: #232323;
+    font-family: Rubik;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.p-08 {
+    color: #232323;
+    font-family: Rubik;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.p-09 {
+    padding-top: 17px;
+    color: #232323;
+    font-family: Rubik;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+@media screen and (max-width: 992px) {
+    .section-01-div{
+        flex-direction: column-reverse;
+        text-align: center;
+    
+    }
+    .book-section01 .left-box {
+        text-align: center;
+    }
+    .book-section02 .div-01 , .book-section02 .div-02 , .book-section02 form{
+        display: none !important;
+    }
+}
