@@ -114,6 +114,9 @@ row-gap: 30px;
 display: flex;
 column-gap: 5%;
 }
+.row a {
+  text-decoration: none;
+}
 #section-3 {
   width: 80%;
   margin: 0 auto;

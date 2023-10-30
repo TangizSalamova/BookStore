@@ -6,14 +6,26 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> -->
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/catalog.css">
+    <link rel="stylesheet" href="./assets/components/register.css">
     <link rel="stylesheet" href="./assets/components/header.css">
-
-
+    <link rel="stylesheet" href="./assets/components/body.css">
+    <link rel="stylesheet" href="./assets/css/catalog.css">
+    <script src="./assets/js/join.js" defer type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer ></script>
     <script src="https://kit.fontawesome.com/e164bdcb7c.js" crossorigin="anonymous" defer></script> 
 </head>
 <body>
+  <div id="popup"  class="close-popup" >
+    <img src="./assets/image/X-popup.png" alt="close">
+    <div class="register">
+      <h2>Join us</h2>  
+        <form action="" class="form-login">
+            <input type="text" placeholder="Full name" name="fname"><br>
+            <input type="email" placeholder="Email" name="email"><br>
+            <input type="submit" value="Join" class="submit">
+        </form>
+    </div>
+    </div>
     <div class="container">
         <header>
             <div class="logo">
@@ -24,7 +36,7 @@
               <nav>
                 <ul>
                   <li>
-                    <a href="./index.html">Home </a>
+                    <a href="./index.html">Home</a>
                   </li>
                   <li><a href="./Catalog.html">Catalog</a></li>
                   <li><a href="./about.html">About Store</a></li>
@@ -45,6 +57,7 @@
               </div>
               <nav class="mobile_menu">
                 <div class="navigate">
+                  <img src="./assets/image/X-popup.png" alt="close">
                   <ul>
                     <li>
                       <a href="./index.html">Home </a>

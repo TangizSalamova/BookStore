@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css"/>
     <!-- <link rel="stylesheet" href="./assets/components/body.css"/> -->
     <link rel="stylesheet" href="./assets/components/header.css"/>
+    <link rel="stylesheet" href="./assets/components/body.css">
     <link rel="stylesheet" href="./assets/css/index.css"/>
     <link rel="stylesheet" href="./assets/components/register.css">
     <script src="https://kit.fontawesome.com/e164bdcb7c.js" crossorigin="anonymous" defer></script>
@@ -15,17 +16,17 @@
     <!-- <script src="./assets/js/home.js" defer type="module"></script> -->
   </head>
   <body>
-    <div class="popup">
-      <form id="joinUs">
-        <h3>Join Us</h3>
-        <input type="text" placeholder="Full name" id="nameJoinUsInput"/>
-        <input type="email" placeholder="Email" id="emailJoinUsInput"/>
-        <div class="alert alert-success" role="alert" style="display: none" id="scAl">
-          Thank you for the subscription!
-        </div>
-        <button>Join</button>
-      </form>
-    </div>
+    <div id="popup"  class="close-popup" >
+      <img src="./assets/image/X-popup.png" alt="close">
+      <div class="register">
+        <h2>Join us</h2>  
+          <form action="" class="form-login">
+              <input type="text" placeholder="Full name" name="fname"><br>
+              <input type="email" placeholder="Email" name="email"><br>
+              <input type="submit" value="Join" class="submit">
+          </form>
+      </div>
+      </div>
       <div class="container">
         <header>
           <div class="logo">
@@ -57,6 +58,7 @@
             </div>
             <nav class="mobile_menu">
               <div class="navigate">
+                <img src="./assets/image/X-popup.png" alt="close">
                 <ul>
                   <li>
                     <a href="./index.html">Home </a>
@@ -75,7 +77,7 @@
   <div class="section-1-left">
     <h1>Books from A to Z</h1>
     <p>In our store you can find a book for every taste. A large assortment. Nice prices. Interesting stories.</p>
-    <a href="./assets/pages/catalog.html"><button>Go to catalogs</button></a>
+    <a href="./catalog.html"><button>Go to catalogs</button></a>
   </div>
   <div class="section-1-right">
   <img src="./assets/image/books-img.png" alt="books-img">
@@ -85,19 +87,19 @@
   <h2>Catalog</h2>
   <div class="catalog">
   <div class="row">
-  <a href="./assets/pages/catalog.html"><div class="catalog-buttons">Books</div></a>
-  <a href="./assets/pages/catalog.html"><div class="catalog-buttons">Electronic books</div></a>
-  <a href="/assets/pages/catalog.html"><div class="catalog-buttons">Audiobooks</div></a>
+  <a href="./catalog.html"><div class="catalog-buttons">Books</div></a>
+  <a href="./catalog.html"><div class="catalog-buttons">Electronic books</div></a>
+  <a href="./catalog.html"><div class="catalog-buttons">Audiobooks</div></a>
 </div>
 <div class="row">
-  <a href="./assets/pages/catalog.html"><div class="catalog-buttons">Toys, creativity</div></a>
-  <a href=""><div class="catalog-buttons">accessories</div></a>
-  <a href=""><div class="catalog-buttons">Notepads</div></a>
+  <a href="./catalog.html"><div class="catalog-buttons">Toys, creativity</div></a>
+  <a href="./catalog.html"><div class="catalog-buttons">accessories</div></a>
+  <a href="./catalog.html"><div class="catalog-buttons">Notepads</div></a>
   </div>
   <div class="row">
-  <a href=""><div class="catalog-buttons">Board games</div></a>
-  <a href=""><div class="catalog-buttons">Present</div></a>
-  <a href=""><div class="catalog-buttons">Stock</div></a>
+  <a href="./contact.html"><div class="catalog-buttons">Board games</div></a>
+  <a href="./catalog.html"><div class="catalog-buttons">Present</div></a>
+  <a href="./catalog.html"><div class="catalog-buttons">Stock</div></a>
 </div>
 </div>
 </section>
