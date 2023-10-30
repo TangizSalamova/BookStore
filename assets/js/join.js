@@ -6,8 +6,7 @@ import {
     push
   } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js";
   import { db } from "./firebase.js";
-  var joinUs = document.querySelector(".join-us");
-  var userIcon = document.querySelector(".user-icon");
+  var joinUs = document.querySelector("div .user_account");
   var popUp = document.querySelector("#popup");
   var closePopUp = function () {
     popUp.classList.remove("popup");
@@ -23,9 +22,6 @@ import {
   var closePopup = document.querySelector("#popup img");
   closePopup.addEventListener("click", function(){
      return closePopUp();
-  });
-  userIcon.addEventListener("click", function() {
-      return openPopUp();
   });
   
   const register = document.querySelector(".register");
@@ -109,3 +105,13 @@ import {
     var f = e.target;
    registerForm.validateInputs(f.fname, f.email );
   })
+  const hamburgerBtn = document.querySelector(".hamburger");
+  const mobileMenyu = document.querySelector(".mobile_menu");
+  const closeMobileMenu = document.querySelector(".mobile_menu .navigate img");
+  hamburgerBtn.addEventListener("click", function(){
+  mobileMenyu.style.display= "block";
+  mobileMenyu.style.display = "flex";
+   })
+   closeMobileMenu.addEventListener("click", function(){
+    mobileMenyu.style.display = "none";
+   })
