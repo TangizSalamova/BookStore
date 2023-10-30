@@ -1,5 +1,5 @@
-import { ref, set, onValue, get } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js";
-import {db} from "./firebase.js";
+import { ref, set, onValue, get, push } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
+import { db } from "./firebase.js";
 import  * as google from  "./searchaApi.js";
 
 const bookNameInput = document.getElementById("bName");
@@ -155,6 +155,8 @@ document.getElementById("makeSearchGoogle").addEventListener("click", (e)=>{
  document.getElementById("bookForm").addEventListener("submit", e=>{
    e.preventDefault();
 
+
+
    books.push(new Book(bookNameInput.value, bookAuthorNameInput.value,
        bookImgUrlInput.value, bookDescriptionInput.value, bookCategoryInput.value));
 
@@ -246,6 +248,6 @@ document.getElementById("aboutUsForm").addEventListener("submit", (e)=>{
 
    set(ref(db, "/aboutUs"), aboutUs);
 
-   showSuccess("About us has been edited!")
+   // showSuccess("About us has been edited!")
 });
 

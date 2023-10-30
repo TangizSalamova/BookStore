@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/components/register.css">
     <link rel="stylesheet" href="./assets/components/header.css">
     <link rel="stylesheet" href="./assets/components/body.css">
     <link rel="stylesheet" href="./assets/css/catalog.css">
-    <script src="./assets/js/join.js" defer type="module"></script>
+    <link rel="stylesheet" href="./assets/components/social.css">
+    <link rel="stylesheet" href="./assets/components/footer.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer ></script>
+    <script src="./assets/js/join.js " defer type="module"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer ></script> -->
     <script src="https://kit.fontawesome.com/e164bdcb7c.js" crossorigin="anonymous" defer></script> 
+    <script src="./assets/js/catalog.js" defer type="module"></script>
 </head>
 <body>
   <div id="popup"  class="close-popup" >
@@ -27,7 +31,7 @@
     </div>
     </div>
     <div class="container">
-        <header>
+      <header>
             <div class="logo">
                 <a href="./index.html"
                   ><img src="./assets/image/mainLogo.png" alt="logo"
@@ -69,21 +73,25 @@
                   </ul>
                 </div>
               </nav>
-        </header>
-        <div class="catalog">
-            <div class="head">
-              <h2 id="showAll">All Books</h2>
-            </div>
-            <div class="type" id="categories">
-            </div>
-          </div>
-  
-          <div class="slide_container swiper">
-            <div class="slide_content">
-              <div class="card_wrapper swiper-wrapper" id="cat">
-    </div>
+      </header>
 
-    <div class="bestseller">
+      <div class="catalog">
+        <div class="head">
+          <h2 id="showAll">All Books</h2>
+        </div>
+        <div class="type" id="categories">
+        </div>
+      </div>
+
+      <div class="slide_container swiper">
+        <div class="slide_content">
+          <div class="card_wrapper swiper-wrapper" id="cat">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+        
+      <div class="bestseller">
         <h3>Besteller</h3>
       </div>
       <div class="slide_container swiper">
@@ -209,5 +217,75 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
+      
+      <section class="social-media">
+        <div class="social-set-text">
+      <h3>Follow us on social media</h3>
+    </div>
+      <div class="social-set-image">
+        <img src="./assets/image/facebook.png" alt="facebook">
+        <img src="./assets/image/twitter.png" alt="twitter">
+        <img src="./assets/image/instagram.png" alt="instagram">
+      </div>
+    </section>
+    </div>
+
+    <footer class="footer-part-container">
+      <div class="footer-middle-part">
+        <div class="footer-icon">
+          <div class="library-logo">
+            <img src="./assets/image/logo.png" alt="" />
+          </div>
+          <div class="respon-part">
+            <div class="div1">
+              <ul class="respon-ul">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/catalog.html">Catalog</a></li>
+                <li><a href="../html/about-store.html">About Store</a></li>
+                <li><a href="../html/contact.html">Contact Us</a></li>
+                <li><a href="../html/search.html">Search</a></li>
+              </ul>
+            </div>
+            <div class="bottom-last-text">
+              <p>Library BookStore EACamp</p>
+              <p>© 2003-2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="div1-p">
+          <ul>
+            <li id="bold-li">Popular</li>
+            <li>Programming</li>
+            <li>Books for children</li>
+            <li>Psychology</li>
+            <li>Business</li>
+          </ul>
+          <ul>
+            <li id="bold-li">Cash</li>
+            <li>Delivery</li>
+            <li>Payment</li>
+            <li>About the store</li>
+          </ul>
+          <ul>
+            <li id="bold-li">Help</li>
+            <li>Contacts</li>
+            <li>Purchase returns</li>
+            <li>Buyer help</li>
+          </ul>
+        </div>
+        <div class="footer-call">
+          <div class="div-call">
+            <p>+38 (071) 339-16-26</p>
+          </div>
+          <button class="btn-call">Request a call</button>
+        </div>
+      </div>
+      <div class="bottom-text">
+        <p>
+          All rights reserved &copy; 2003-2021 LIBRARY TERMS OF USE | Privacy
+          Policy
+        </p>
+      </div>
+      </footer>
 </body>
 </html>

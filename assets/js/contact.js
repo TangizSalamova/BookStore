@@ -1,11 +1,5 @@
-import {
-    ref,
-    set,
-    onValue,
-    get,
-    push
-  } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js";
-  import { db } from "./firebase.js";
+import { ref, set, onValue, get, push } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
+import { db } from "./firebase.js";
   
  const name = document.querySelector("#fname");
  console.log(name.value);

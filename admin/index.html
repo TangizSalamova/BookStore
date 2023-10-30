@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/login.css">
     <link rel="stylesheet" href="./assets/Font/font.css">
-    <script src="./assets/js/login.js" type="module" defer></script>
+    <!-- <script src="./assets/js/login.js" type="module" defer></script> -->
+    <script src="./assets/js/login.js" defer type="module"></script>
 </head>
 <body>
     <main>
@@ -17,10 +18,10 @@
         <div class="join">
             <div class="join-path">
                 <h1>Welcome Admin</h1>
-                <form method="get" id="login"  autocomplete="off">
-                    <input type="text" name="username" id="username" placeholder="Username">
-                    <input type="password" name="password" id="pass" placeholder="Password">
-                    <button type="submit" class="btn" id="form" value="Submit">Join</button>
+                <form id="login">
+                    <input type="text"  id="username" placeholder="Username">
+                    <input type="password"  id="pass" placeholder="Password">
+                    <button type="submit" class="btn" id="form" >Join</button>
                 </form>
                 
             </div>
