@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/book-page.css" />
     <script src="https://kit.fontawesome.com/e164bdcb7c.js" crossorigin="anonymous" defer></script>
     <script src="./assets/js/join.js" defer type="module"></script>
+    <script src="./assets/js/book-page.js" defer type="module"></script>
   </head>
   
   <body>
@@ -39,7 +40,7 @@
                 <li>
                   <a href="./index.html">Home </a>
                 </li>
-                <li><a href="./Catalog.html">Catalog</a></li>
+                <li><a href="./catalog.html">Catalog</a></li>
                 <li><a href="./about.html">About Store</a></li>
                 <li><a href="./contact.html">Contact Us</a></li>
                 <li><a href="./search.html">Search</a></li>
@@ -63,7 +64,7 @@
                   <li>
                     <a href="./index.html">Home </a>
                   </li>
-                  <li><a href="./Catalog.html">Catalog</a></li>
+                  <li><a href="./catalog.html">Catalog</a></li>
                   <li><a href="./about.html">About Store</a></li>
                   <li><a href="./contact.html">Contact Us</a></li>
                   <li><a href="./search.html">Search</a></li>
@@ -75,18 +76,18 @@
     <main>
       <!-- Section 01 -->
       <section class="book-section01">
-        <button class="btn1"><a href="#">&#60; BACK</a></button>
+        <button class="btn1"><a href="./catalog.html">&#60; BACK</a></button>
         <div class="section-01-div">
           <div class="left-box">
             <button class="btn2"><a href="#">2017</a></button>
-            <h2>Order in Chaos</h2>
+            <h2 id="title">Order in Chaos</h2>
             <p class="p-01">2 days ago added</p>
-            <h4>Konstantin Koptelov</h4>
-            <p class="p-02"> s of Kiev can receive an order on the day of its registration. Customers from other cities of Ukraine can receive an order within 1-5 days, depending on the location of the settlement and the selected delivery method. Orders over UAH 1000 are delivered  free of charge *. You can see the available methods, exact terms and cost of delivery during checkout in the order basket, after selecting the delivery city.</p>
-            <p class="p-03">More details</p>
+            <h4 id="author">Konstantin Koptelov</h4>
+            <p class="p-02" id="desc"> s of Kiev can receive an order on the day of its registration. Customers from other cities of Ukraine can receive an order within 1-5 days, depending on the location of the settlement and the selected delivery method. Orders over UAH 1000 are delivered  free of charge *. You can see the available methods, exact terms and cost of delivery during checkout in the order basket, after selecting the delivery city.</p>
+            <p class="p-03" >More details</p>
           </div>
           <div class="right-box">
-            <img src="./assets/image/book-store-aysel.png" alt="book-photo">
+            <img src="./assets/image/book-store-aysel.png" id="myImg" alt="book-photo">
           </div>
         </div>
     </section>

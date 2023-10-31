@@ -33,27 +33,87 @@ let swiper = new Swiper(".slide_content", {
   observeParents: true,
 });
 
+function showBestseller(bookList){
+  let trueBooks =bookList.filter(x=>x.averageRating>=3);
+  for (let i in trueBooks) {
+    document.getElementById("bestseller").insertAdjacentHTML('beforeend',
+    `<div class="card swiper-slide">
+    <div class="img">
+      <img src="${trueBooks[i].imgUrl}" alt="img" />
+    </div>
+    <div class="content">
+      <h3>${trueBooks[i].name}</h3>
+      <p>${trueBooks[i].author}</p>
+      <button>Read more</button>
+    </div>
+  </div>`)
+  }
+}
 
-function showCategories(cats) {
-  const parent = document.getElementById("categories");
+function showNewRelasie(bookList){
+  let trueBooks =[];
 
-  const trueCategories = [];
-  for (const i of cats) {
-    if(!trueCategories.includes(i.category)){
-      trueCategories.push(i);
+
+  for (let i in bookList) {
+    if(bookList[i].publishedDate.split('').splice(0,4).join('')>2015){
+      trueBooks.push(bookList[i]);
     }
   }
 
-  for (let i in trueCategories) {
-      parent.insertAdjacentHTML("beforeend",
-          `<span id="myId-${trueCategories[i]}">${trueCategories[i]}</span>`)
+ 
+
+  for (let i in trueBooks) {
+    document.getElementById("newRel").insertAdjacentHTML('beforeend',
+    `<div class="card swiper-slide">
+    <div class="img">
+      <img src="${trueBooks[i].imgUrl}" alt="img" />
+    </div>
+    <div class="content">
+      <h3>${trueBooks[i].name}</h3>
+      <p>${trueBooks[i].author}</p>
+      <button>Read more</button>
+    </div>
+    <span>New</span>
+  </div>`)
   }
-  addEventListenersToCategory(trueCategories)
+}
+
+function showCategories(cats) {
+  // const parent = document.getElementById("categories");
+
+  // const trueCategories = [];
+  // for (const i of cats) {
+  //   if(!trueCategories.includes(i.category)){
+  //     trueCategories.push(i);
+  //   }
+  // }
+
+  // for (let i in trueCategories) {
+  //     parent.insertAdjacentHTML("beforeend",
+  //         `<span id="myId-${trueCategories[i]}">${trueCategories[i]}</span>`)
+  // }
+  // addEventListenersToCategory(trueCategories)
+
+  const parent = document.getElementById("categories");
+
+  const trueCats = [];
+  for(let i in cats){
+    if(!trueCats.includes(cats[i].category)){
+      trueCats.push(cats[i].category);
+    }
+  }
+
+  for(let i in trueCats){
+    parent.insertAdjacentHTML('beforeend', 
+  `<span style="cursor:pointer;" id="catId-${trueCats[i]}">${trueCats[i]}</span>`)
+  }
+
+  addEventListenersToCategory(trueCats)
 }
 
 function addEventListenersToCategory(cats) {
   for (let i in cats) {
-      document.getElementById(`myId-${cats[i]}`).addEventListener("click",()=>{
+      document.getElementById(`catId-${cats[i]}`).addEventListener("click",()=>{
           changeSliders(cats[i])
       })
   }
@@ -63,8 +123,8 @@ function addEventListenersToReadMore(books) {
   for (let i in books) {
       document.getElementById(`rM-${i}`).addEventListener("click", ()=>{
           let myId = encodeURIComponent(books[i].id);
-          window.location.href = "" +
-              "book.html?book=" + myId;
+          window.location.href ="" +
+              "book-page.html?book=" + myId;
       })
   }
 }
@@ -108,9 +168,14 @@ window.addEventListener("load", ()=>{
   get(ref(db, '/Catalog')).then(snapshot=>{
       if(data!==null){
           showBooks(snapshot.val().filter(x=>x.category===data));
+          showBestseller(snapshot.val());
+      showNewRelasie(snapshot.val());
           return;
       }
       showBooks(snapshot.val());
+      showBestseller(snapshot.val());
+      showNewRelasie(snapshot.val());
+
   });
 
   

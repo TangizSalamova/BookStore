@@ -7,10 +7,17 @@ const bookAuthorNameInput = document.getElementById("aName");
 const bookImgUrlInput = document.getElementById("Burl");
 const bookDescriptionInput = document.getElementById("dscrptn");
 const bookCategoryInput = document.getElementById("bCategory");
+const bookPublishedDate = document.getElementById("publishedDate");
+const bookBestseller = document.getElementById("rating");
+const bookID = document.getElementById("id");
+
 
 let books = [];
 let categories = [];
 let contacts = [];
+// let number = 0;
+// bookID.value = number;
+
 
 class Book {
    name;
@@ -18,13 +25,20 @@ class Book {
    imgUrl;
    description;
    category;
+   publishedDate;
+   averageRating;
+   id;
+
  
-   constructor(name, author, imgUrl, desc, category) {
+   constructor(name, author, imgUrl, desc, category,  publishedDate, averageRating, id) {
      this.name = name;
      this.author = author;
      this.imgUrl = imgUrl;
      this.description = desc;
      this.category = category;
+     this.publishedDate = publishedDate;
+     this.averageRating = averageRating;
+     this.id = id;
      
    }
  }
@@ -48,6 +62,11 @@ function showBooks(myBooks){
               <td>${myBooks[i].description.substring(0,100)}...</td>
               <td>${myBooks[i].category}</td>
               <td>${myBooks[i].author}</td>
+              <td>${myBooks[i].publishedDate}</td>
+              <td>${myBooks[i].averageRating}</td>
+              <td>${myBooks[i].id}</td>
+
+
 
             </tr>`);
    }
@@ -133,6 +152,9 @@ document.getElementById("makeSearchGoogle").addEventListener("click", (e)=>{
           bookAuthorNameInput.value = results['items'][resultKey]['volumeInfo']['authors'];
           bookImgUrlInput.value = results['items'][resultKey]['volumeInfo']['imageLinks']['thumbnail'];
           bookDescriptionInput.value = results['items'][resultKey]['volumeInfo']['description'];
+          bookPublishedDate.value = results['items'][resultKey]['volumeInfo']['publishedDate'];
+          bookBestseller.value = results['items'][resultKey]['volumeInfo']['averageRating'];
+
 
        })
     }
@@ -149,20 +171,26 @@ document.getElementById("makeSearchGoogle").addEventListener("click", (e)=>{
    bookImgUrlInput.value = "";
    bookDescriptionInput.value = "";
    bookCategoryInput.value = "";
+   bookPublishedDate.value = "";
+   bookBestseller.value = "";
+   bookID.value = "0";
+
+
 }
 
 
  document.getElementById("bookForm").addEventListener("submit", e=>{
    e.preventDefault();
-
+  
+   // number+=1;
 
 
    books.push(new Book(bookNameInput.value, bookAuthorNameInput.value,
-       bookImgUrlInput.value, bookDescriptionInput.value, bookCategoryInput.value));
+       bookImgUrlInput.value, bookDescriptionInput.value, bookCategoryInput.value, bookPublishedDate.value, bookBestseller.value, bookID.value));
 
     console.log(books);
 
-   set(ref(db, '/Catalog'), books);
+   set(ref(db, '/Catalog'), books)
 
    let oldBooks;
   
